@@ -9,6 +9,7 @@ class Solution:
         """
         length = len(nums)
         if k > length:
+            # if 0, means rotation will not change anything
             if k % length == 0: return
             else: self.switch(nums, k % length)
                 
