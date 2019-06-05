@@ -16,7 +16,6 @@ class MyStack:
             queue.insert(0, self.stack.pop())
             
         self.stack = queue
-        print(self.stack)
         
 
     def pop(self) -> int:
@@ -35,8 +34,5 @@ class MyStack:
         
 
     def empty(self) -> bool:
-        """
-        Returns whether the stack is empty.
-        """
         return not len(self.stack)
     
